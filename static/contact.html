@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urFOODshop - Contact Us</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Contact urFOODshop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Please fill out the form below to contact us.</p>
+        <form id="contact-form" method="POST" action="/submit-form">
+            <label for="name">Your Name: <input id="name" name="name" type="text" required /></label>
+            <label for="email">Your Email: <input id="email" name="email" type="email" required /></label>
+            <label for="subject">Subject: <input id="subject" name="subject" type="text" required /></label>
+            <label for="message">Your Message: <textarea id="message" name="message" required></textarea></label>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 urFOODshop. All rights reserved.</p>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
